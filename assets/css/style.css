@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variáveis CSS */
+:root {
+  --text-color: #000000;
+  --background-color: #f8f8f8;
+  --brand-color: rgb(54, 59, 150);
+  --header-font: "Ubuntu", Ubuntu, Arial, sans-serif;
+  --body-font: "Work Sans", sans-serif;
+}
+
+/* Estilos Globais e Padrões (Aplicados a todas as telas, mas com foco em mobile primeiro) */
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: var(--text-color);
+  font-size: 16px; /* Tamanho base de fonte para mobile */
+}
+
+a {
+  color: var(--text-color);
+  opacity: 0.7;
+  text-decoration: none; /* Remover sublinhado padrão */
+}
+
+a:hover {
+  opacity: 1;
+}
+
+h2 {
+  font-family: var(--header-font);
+  color: var(--brand-color);
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 2em; /* Ajuste para mobile */
+}
+
+/* Cabeçalho do Site */
+.site-header {
+  background-color: var(--brand-color);
+  color: rgb(0, 0, 0);
+  border-bottom: #0e0e0e 0.6px hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column; /* Pilha itens em mobile */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-family: var(--header-font);
+    font-size: 1.8em; /* Ajuste para mobile */
+  }
+
+  .site-title {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    margin-bottom: 10px; /* Espaço entre título e navegação */
+  }
+
+  .site-title:hover {
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+  }
+
+  .site-nav {
+    width: 100%; /* Ocupa a largura total */
+    margin-top: 10px;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column; /* Links da navegação empilhados */
+      align-items: center;
+      li {
+        margin: 5px 0; /* Espaço vertical entre os links */
+        a {
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          padding: 5px 10px; /* Aumenta a área clicável */
+        }
+      }
+    }
+  }
+}
+
+/* Wrapper de Conteúdo */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Ocupa a largura total em mobile */
+  margin: 15px auto; /* Margem menor para mobile */
+  padding: 0 15px; /* Padding menor */
+  align-items: center;
+}
+
+/* Post Individual */
+.post {
+  max-width: 100%; /* Ocupa a largura total em mobile */
+  background-color: white;
+  padding: 16px; /* Padding menor */
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 1em; /* Ajuste para mobile */
+
+  .post-header {
+    text-align: center;
+    margin-bottom: 15px;
+    .post-title {
+      font-size: 2em; /* Ajuste para mobile */
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: var(--brand-color);
+    }
+    .post-subtitle {
+      font-size: 1.1em; /* Ajuste para mobile */
+      color: #555;
+      margin: 5px;
+    }
+    .post-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.85em; /* Ajuste para mobile */
+      color: #666;
+    }
+  }
+
+  .post-content {
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--brand-color);
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      font-size: 1.3em; /* Ajuste para mobile */
+    }
+    p {
+      line-height: 32px;
+      margin-bottom: 24px; /* Margem menor */
+      font-size: 1em; /* Ajuste para mobile */
+    }
+    li {
+      margin-bottom:5px; /* Margem menor */
+    }
+    th{
+      padding-right: 10px;
+    }
+    img {
+      max-width: 90%; /* Ajuste para não transbordar */
+      height: auto;
+      display: block;/* Margem menor */
+    }
+    pre, code {
+      color: white;
+      background-color: #24292E;
+      margin: 10px;
+      border-radius: 10px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.7em; /* Ajuste para mobile */
+      padding: 5px;
+    }
+    pre {
+      overflow-x: auto;
+      white-space: pre-wrap; /* Quebra linhas longas */
+      word-wrap: break-word; /* Permite rolagem horizontal se necessário */
+    }
+  }
+}
+
+/* Rodapé do Site */
+.site-footer {
+  text-align: center;
+  padding: 15px; /* Padding menor */
+  margin-top: 20px; /* Margem menor */
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 0.8em; /* Ajuste para mobile */
+
+  h1 {
+    font-size: 0.9em; /* Ajuste para mobile */
+  }
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+}
+
+/* Contêiner de Últimas Notícias */
+.container_latest {
+  display: grid;
+  grid-template-columns: 1fr; /* Uma coluna para mobile */
+  gap: 15px; /* Espaçamento menor */
+  padding: 15px;
+  justify-content: center;
+}
+
+.posts_latest, .posts, .posts_order {
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza itens */
+  justify-content: center;
+  overflow: hidden;
+  min-width: unset; /* Remove min-width para mobile */
+  text-align: center; /* Centraliza texto */
+}
+
+.posts_latest img, .posts img, .posts_order img {
+  width: 90%; /* Ajusta o tamanho da imagem */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.post-image {
+  padding: 5px; /* Padding menor */
+  width: 90%; /* Ajuste para mobile */
+}
+
+.posts_latest p, .posts p, .posts_order p {
+  font-size: 0.9em; /* Ajuste para mobile */
+  color: #333;
+  text-align: center; /* Centraliza texto */
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.posts_latest a, .posts a, .posts_order a {
+  font-size: 1.2em; /* Ajuste para mobile */
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.posts_latest h3, .posts h3, .posts_order h3 {
+  font-size: 1.1em; /* Ajuste para mobile */
+  color: var(--brand-color);
+  font-weight: bold;
+  opacity: 0.8;
+  margin: 5px 0;
+}
+
+/* Contêiner de Posts (Geral) */
+.container_posts {
+  display: grid;
+  grid-template-columns: 1fr; /* Uma coluna para mobile */
+  gap: 15px; /* Espaçamento menor */
+  padding: 15px;
+  align-content: center;
+}
+
+.posts_order h3 {
+  font-size: 0.9em; /* Ajuste para mobile */
+}
+
+.posts_order a {
+  font-size: 1.1em; /* Ajuste para mobile */
+}
+
+.posts_order p {
+  font-size: 0.8em; /* Ajuste para mobile */
+}
+
+.post-image-caption {
+  font-size: 0.8em; /* Ajuste para mobile */
+  color: #888;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+blockquote {
+  background-color: #f5f5f5;
+  border-left: 4px solid #a9a9a9;
+  border-radius: 5px;
+  padding: 10px; /* Padding menor */
+  font-size: 0.95em; /* Ajuste para mobile */
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column; /* Empilha posts verticalmente */
+  align-items: center; /* Centraliza os posts */
+  gap: 5px; /* Espaçamento entre os posts */
+}
+
+.post-list div {
+  padding: 5px; /* Padding menor */
+  width: 100%; /* Ocupa a largura total */
+  max-width: 700px; /* Limita a largura máxima */
+  text-align: center; /* Centraliza o texto */
+}
+
+.post-list div h4 {
+  text-align: justify;
+  font-size: 1em; /* Ajuste para mobile */
+  font-style: normal;
+  font-weight: 450;
+}
+
+
+.sobre {
+  text-decoration: none;
+}
+
+/* --- Media Queries para Telas Maiores --- */
+
+@media (min-width: 768px) {
+  /* Estilos para tablets e desktops */
+  body {
+    font-size: 18px; /* Tamanho base de fonte para telas maiores */
+  }
+
+  h2 {
+    font-size: 2.5em; /* Retorna ao tamanho original */
+  }
+
+  .site-header {
+    flex-direction: row; /* Retorna a layout em linha */
+    h1 {
+      font-size: 2.5em;
+    }
+    .site-nav {
+      width: auto; /* Permite que o nav ocupe o espaço necessário */
+      margin-top: 0;
+      ul {
+        flex-direction: row; /* Links da navegação em linha */
+        li {
+          margin: 0 15px; /* Espaço horizontal entre os links */
+        }
+      }
+    }
+  }
+
+  .content-wrapper {
+    max-width: 1000px; /* Retorna ao max-width original */
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  .post {
+    max-width: 700px; /* Retorna ao max-width original */
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+
+    .post-header {
+      margin-bottom: 20px;
+      .post-title {
+        font-size: 2.5em;
+      }
+      .post-subtitle {
+        font-size: 1.2em;
+      }
+      .post-meta {
+        font-size: 0.9em;
+      }
+    }
+
+    .post-content {
+      h2 {
+        font-size: 1.4em;
+      }
+      h4 {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 20px;
+        margin-bottom: 1.1em;
+      }
+      img {
+        max-width: 70%;
+        margin: 10px 16px;
+        padding: 0px 80px;
+      }
+      pre, code {
+        font-size: 0.88em;
+      }
+    }
+  }
+
+  .site-footer {
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.85em;
+
+    h1 {
+      font-size: 1em;
+    }
+  }
+
+  .container_latest {
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas para telas maiores */
+    gap: 20px;
+  }
+
+  .posts_latest, .posts, .posts_order {
+    min-width: 250px; /* Retorna ao min-width original */
+    align-items: space-between;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .posts_latest img, .posts img, .posts_order img {
+    width: 100%; /* Retorna ao tamanho original */
+  }
+
+  .post-image {
+    width: 70%;
+  }
+
+  .posts_latest p, .posts p, .posts_order p {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .posts_latest a, .posts a, .posts_order a {
+    font-size: 1.5em;
+  }
+
+  .posts_latest h3, .posts h3, .posts_order h3 {
+    font-size: 1.2em;
+    margin: 2px;
+  }
+
+  .container_posts {
+    grid-template-columns: repeat(3, 1fr); /* Três colunas para telas maiores */
+    gap: 20px;
+  }
+
+  .posts_order h3 {
+    font-size: 0.8em;
+  }
+
+  .posts_order a {
+    font-size: 1em;
+  }
+
+  .posts_order p {
+    font-size: 0.7em;
+  }
+
+  .post-image-caption {
+    font-size: 0.9em;
+  }
+
+  blockquote {
+    padding: 5px;
+    font-size: 1em;
+  }
+}
