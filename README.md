@@ -1,11 +1,11 @@
 # Documentação do Blog IA - BIA
-> Usando Github pages e Jkelly
+> Usando GitHub Pages e Jekyll
 
-### Ferramentas jkelly localmente (Testes do Projeto)
-> Requer instalação do Ruby e do Jkelly na máquina
+### Ferramentas Jekyll localmente (Testes do Projeto)
+> Requer instalação do Ruby e do Jekyll na máquina
 
 ```bash
-    # Instalar dependencias
+    # Instalar dependências
     bundle install
     
     # Executar servidor local
@@ -21,25 +21,25 @@
 
 ```yaml
 
-# Define titulo principal do site
+# Define título principal do site
 title:  IA BLOG - UFRPE
 
-# Endereco de contato
-email:  gabrielbelo.dev@gmail.com
+# Endereço de contato
+email:  sarahpereiradal@gmail.com
 
-# Descricao do site
+# Descrição do site
 description:  >- (define que nao deve ter quebra de linha no texto abaixo)
-Esse e um blog de IA, onde serão postados artigos e tutoriais sobre Inteligência Artificial,
+Esse é um blog de IA, onde serão postados artigos e tutoriais sobre Inteligência Artificial,
 Aprendizado de Máquina e Ciência de Dados.
 
-# Define o diretorio no qual o site sera servido
-baseurl:  "/blog-IA"  # the subpath of your site, e.g. /blog
+# Define o diretório no qual o site será servido
+baseurl:  ""  # the subpath of your site, e.g. /blog
 
-# Dominio padrao do Github Pages
-url:  "gabrielbelo2007.github.io" 
+# Domínio padrão do GitHub Pages
+url:  "iablog.github.io" 
 
-# Informacao adicional para ser anexada ao site caso necessario
-github_username:  gabrielbelo2007
+# Informação adicional para ser anexada ao site caso necessário
+github_username:  iablog
 
 # Processador de .md para HTML
 markdown:  kramdown
@@ -50,7 +50,7 @@ highlighter: rouge
 kramdown:
   input: GFM 
 
-# Listas de plugins do Jkelly
+# Listas de plugins do Jekyll
 plugins:
 - jekyll-sass-converter
 ```
@@ -108,4 +108,3 @@ tags: [IA Generativa, Chatbots, Criação de Conteúdo, DALL-E]
 ```
 ---
 [Exemplo: conteúdo do post](/_posts/2025-06-16-post.md)
-
