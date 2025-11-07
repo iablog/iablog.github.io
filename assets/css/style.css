@@ -218,9 +218,8 @@ h2 {
 }
 
 .posts_latest img, .posts img, .posts_order img {
-  width: 100%; /* Ajusta o tamanho da imagem */
-  height: 200px;
-  object-fit: cover;
+  width: 90%; /* Ajusta o tamanho da imagem */
+  height: auto;
   border-radius: 8px;
   margin-bottom: 10px;
 }
