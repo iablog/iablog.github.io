@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Bits & Bytes da IA
+layout: default 
 permalink: /
 ---
 
