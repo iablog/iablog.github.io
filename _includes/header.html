@@ -1,4 +1,39 @@
-<header class="site-header">
+<style>
+  /* Estilo Base (Mobile/Celular): Logos centralizadas acima do título para não sobrepor */
+  .header-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Espaço para empurrar o título para baixo */
+    width: 100%;
+  }
+
+  /* Estilo Desktop (Telas maiores que 768px): Logos fixas no canto direito */
+  @media (min-width: 768px) {
+    .header-logos {
+      position: absolute; /* Libera as logos para irem para o canto */
+      top: 20px;          /* Distância do topo */
+      right: 30px;        /* Distância da direita extrema */
+      width: auto;        /* Ocupa apenas o espaço necessário */
+      margin-bottom: 0;
+      z-index: 10;        /* Garante que fiquem acima do fundo */
+    }
+  }
+</style>
+
+<header class="site-header" style="position: relative;">
+
+  <div class="header-logos">
+    <a href="https://www.facepe.br" target="_blank">
+      <img src="{{ '/assets/img/logo_facepe.png' | relative_url }}" alt="Logo FACEPE" style="height: 70px; width: auto; background-color: white; padding: 5px; border-radius: 5px;"> 
+    </a>
+
+    <a href="http://www.dc.ufrpe.br" target="_blank">
+      <img src="{{ '/assets/img/logo_dc_ufrpe.png' | relative_url }}" alt="Logo DC UFRPE" style="height: 70px; width: auto; background-color: white; padding: 5px; border-radius: 5px;">
+    </a>
+  </div>
+
   <div class="wrapper" style="text-align: center;">
     <h1>
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
