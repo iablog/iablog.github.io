@@ -4,8 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Esta proposta surge da necessidade urgente de disseminar conteúdos técnicos e reflexões críticas sobre os avanços recentes da Inteligência Artificial (IA). 
+Esta proposta surge da necessidade urgente de disseminar conteúdos técnicos e reflexões críticas sobre os avanços recentes da Inteligência Artificial (IA).
 
-Dessa forma através da orientação do Professor Dr. Pablo Sampaio e com apoio da FACEPE (Fundação de Amparo à Ciência e Tecnologia de Pernambuco), esse projeto é construído pela aluna Sarah Lima - Estudante de Ciência da Computação na UFRPE - com o objetivo de:
+Dessa forma, através da orientação do Professor Dr. Pablo Sampaio e com apoio da FACEPE (Fundação de Amparo à Ciência e Tecnologia de Pernambuco), este projeto é construído pela aluna Sarah Lima - Estudante de Ciência da Computação na UFRPE - com o objetivo de:
 
 > Divulgar as novidades técnicas em português, com viés prático, visando atingir alunos, profissionais e possivelmente pesquisadores da área de Computação.
+
+**Dúvidas, sugestões de conteúdo ou contato:**  
+[sarah.araujo@ufrpe.br](mailto:sarah.araujo@ufrpe.br)
