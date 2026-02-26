@@ -5,6 +5,7 @@
   --text-color: #000000;
   --background-color: #f8f8f8;
   --brand-color: rgb(54, 59, 150);
+  --cor02: #418FB4;
   --header-font: "Ubuntu", Ubuntu, Arial, sans-serif;
   --body-font: "Work Sans", sans-serif;
 }
@@ -40,7 +41,7 @@ h2 {
 
 /* Cabeçalho do Site */
 .site-header {
-  background-color: var(--brand-color);
+  background-image: linear-gradient(to bottom, var(--brand-color), var(--cor02));
   color: rgb(0, 0, 0);
   border-bottom: #0e0e0e 0.6px hidden;
   padding: 15px;
